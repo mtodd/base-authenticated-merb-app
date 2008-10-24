@@ -12,5 +12,6 @@ class Account
   ### Associations
   
   belongs_to :user
+  has n, :incomes
   
 end

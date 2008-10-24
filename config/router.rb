@@ -31,7 +31,9 @@ Merb::Router.prepare do
   # resources :posts
   
   resources :users do
-    resources :accounts
+    resources :accounts do
+      resources :incomes
+    end
   end
   
   resources :categories
