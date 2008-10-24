@@ -1,7 +1,7 @@
-migration 4, :create_incomes  do
+migration 4, :create_transactions  do
   
   up do
-    create_table :incomes do
+    create_table :transactions do
       column :id,               Serial
       column :account_id,       Integer
       column :name,             String
@@ -16,7 +16,7 @@ migration 4, :create_incomes  do
   end
   
   down do
-    drop_table :incomes
+    drop_table :transactions
   end
   
 end
