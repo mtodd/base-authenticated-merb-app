@@ -17,5 +17,7 @@ class Transaction
   ### Associations
   
   belongs_to :account
+  has n, :categorizations
+  has n, :categories, :through => :categorizations
   
 end
