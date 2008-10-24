@@ -30,6 +30,10 @@ Merb::Router.prepare do
   # RESTful routes
   # resources :posts
   
+  resources :users do
+    resources :accounts
+  end
+  
   resources :categories
   
   # Adds the required routes for merb-auth using the password slice
