@@ -3,27 +3,27 @@
 development: &defaults
   # These are the settings for repository :default
   adapter:  sqlite3
-  database: sample_development.db
- 
+  database: db/income_planner_development.db
+  
   # Add more repositories
   # repositories:
   #   repo1:
   #     adapter:  sqlite3
-  #     database: sample_1_development.db
+  #     database: db/development.db
   #   repo2:
   #     ...
- 
+  
 test:
   <<:       *defaults
-  database: sample_test.db
- 
+  database: db/test.db
+  
   # repositories:
   #   repo1:
   #     database: sample_1_test.db
- 
+  
 production:
   <<:       *defaults
-  database: production.db
+  database: db/production.db
  
   # repositories:
   #   repo1:
