@@ -9,6 +9,7 @@ schema/*_structure.sql
 schema/*.sqlite3
 schema/*.sqlite
 schema/*.db
+config/database.yml
 *.sqlite
 *.sqlite3
 *.db
