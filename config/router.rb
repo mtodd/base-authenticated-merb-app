@@ -33,6 +33,7 @@ Merb::Router.prepare do
   resources :users do
     resources :accounts do
       resources :incomes
+      resources :expenditures
     end
   end
   
