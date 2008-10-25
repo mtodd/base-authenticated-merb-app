@@ -1,11 +1,11 @@
 class Application < Merb::Controller
   
   def current_user
-    @_current_user ||= User.first(:id => sessions[:user_id])
+    @_current_user ||= session.user
   end
   
   def current_account
-    @_current_account ||= Account.first(:id => sessions[:account_id], :user_id => sessions[:user_id])
+    @_current_account ||= Account.first(:id => session[:account_id], :user_id => current_user.id)
   end
   
 end
