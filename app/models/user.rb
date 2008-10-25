@@ -1,5 +1,6 @@
 class User
   include DataMapper::Resource
+  include Merb::Authentication::Mixins::SaltedUser
   
   ### Properties
   
