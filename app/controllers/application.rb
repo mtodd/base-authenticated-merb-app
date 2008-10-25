@@ -1,5 +1,7 @@
 class Application < Merb::Controller
   
+  before :ensure_authenticated
+  
   def current_user
     @_current_user ||= session.user
   end

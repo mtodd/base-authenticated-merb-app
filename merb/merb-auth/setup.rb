@@ -7,6 +7,13 @@
 # Merb::Plugins.config[:"merb-auth"][:login_param]    = :email 
 # Merb::Plugins.config[:"merb-auth"][:password_param] = :my_password_field_name
 
+# redirect mixin
+require 'merb-auth-more/mixins/redirect_back'
+
+# basic strategies
+require 'merb-auth-more/strategies/basic/password_form'
+require 'merb-auth-more/strategies/basic/openid'
+
 begin
   # Sets the default class ofr authentication.  This is primarily used for 
   # Plugins and the default strategies
